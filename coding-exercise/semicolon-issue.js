@@ -1,5 +1,5 @@
 function foo() {
-    return
+    return 
     {
         message: "Hello World"
     };
