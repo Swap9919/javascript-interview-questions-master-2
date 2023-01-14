@@ -18,3 +18,18 @@ console.log(foo(), typeof x, typeof y);
 // To avoid this tricky situation, use strict mode by adding 'use strict' to the top of out code.Then we’ll get the error ‘b is not defined’.
 
 // Modules always use strict mode so this is not an issue with them
+
+
+const fruits = ['apple', 'orange'];
+fruits.length = 0;
+fruits[0];
+console.log(fruits[0])
+
+
+// The console.log should show undefined since we set the fruits ‘s length property to 0, which empties the array.
+
+//     Therefore, fruits becomes an empty array set setting its length to 0.
+
+// Then we display undefined.
+
+
