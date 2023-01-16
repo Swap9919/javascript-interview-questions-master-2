@@ -1,5 +1,5 @@
 function foo() {
-    let x = y = 0;
+    let x = y = 0; // second variable will be a global variable, it assumes as window.y=0;
     x++;
     y++;
     return x;
