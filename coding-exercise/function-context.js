@@ -5,9 +5,12 @@ function User(name, age) {
     this.getProfile = function() {
         // Outer function context
         console.log(this.constructor.name); // User
+        console.log(this.name); // john
+        console.log(this.age); // 25
         return function() {
             // Inner function context
             console.log(this.constructor.name); // Window
+            console.log(this.name); // Window
             console.log("I'm " + this.name + ", " + this.age + " yrs old");
         };
     }
