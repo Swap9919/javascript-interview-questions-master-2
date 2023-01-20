@@ -4,8 +4,8 @@ let name = {
 }
 
 
-let printFullName = function (hometown) {
-      console.log( this.firstname + " " + this.lastname + " from " + hometown);
+let printFullName = function (hometown, state) {
+      console.log( this.firstname + " " + this.lastname + " from " + hometown + " " + state);
 }
 
 let name2 = {
@@ -13,4 +13,5 @@ let name2 = {
       lastname: "Smith",
 }
 
-printFullName.apply(name2, ['ohio']);
+printFullName.apply(name2, ['ohio', 'CA']);
+printFullName.apply(name, ['New york']);
