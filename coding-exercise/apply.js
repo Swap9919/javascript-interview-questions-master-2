@@ -15,3 +15,4 @@ let name2 = {
 
 printFullName.apply(name2, ['ohio', 'CA']);
 printFullName.apply(name, ['New york']);
+//apply() method invokes a function with a given this value and allow you to pass arguments as an array.
