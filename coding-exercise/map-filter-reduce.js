@@ -24,3 +24,8 @@ const output2 = users.reduce(function (acc, curr) {
 }, {});
 
 console.log(output2);
+
+// we can basically chain these map filter and reduce functions
+
+const output3 = users.filter(x => x.age >30).map(x => x.firstname);
+console.log(output3);
