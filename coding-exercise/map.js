@@ -1,5 +1,5 @@
 const arr = [4,6,7,3,7,9];
-const output = arr.map(binary);
+const output = arr.map(double);
 function double(x) {
       return x*2;
 }
@@ -11,6 +11,7 @@ function binary(x) {
 }
 
 const output2 = arr.map( (x) => x.toString(2));
+const output1 = arr.map( (x) =>  x*2 );
 
-console.log(output);
+console.log(output1);
 console.log(output2);
